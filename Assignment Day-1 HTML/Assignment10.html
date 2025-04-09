@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+    
+    <!--Head Section-->
+    <header>
+        <h1>FAQ</h1>
+    </header>
+    <hr>
+
+    <!--Question and answer section-->
+    <dl>
+        <dt>What is your Name?</dt>
+        <dd>-My name is Pussy Cat.</dd>
+        <hr>
+
+        <dt>Where do you live?</dt>
+        <dd>-I live in My Place.</dd>
+        <hr>
+
+        <dt>Where do you visit?</dt>
+        <dd>-I visit everywhere.</dd>
+        <hr>
+
+        <dt>What do you do?</dt>
+        <dd>-I am doing everything.</dd>
+        <hr>
+
+        <dt>With whom do i talk to?</dt>
+        <dd>-I am talking with you.</dd>
+        <hr>
+    </dl>
+
+    <!--Simple JS to toggle the visibility of answers-->
+    <script>
+        let allQuestion = document.querySelectorAll('dt');
+
+        for (let question of allQuestion) {
+            question.onclick = function() {
+                let answer = this.nextElementSibling;
+                answer.style.display = (answer.style.display === "block")?"none":"block";
+            }
+        }
+    </script>
+</body>
+</html>

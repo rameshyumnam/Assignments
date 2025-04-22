@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, grey, black);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 550;
+            font-size: 25px;
+        }
+        img {
+            height: 15%;
+            width: 14.45%;
+        }
+        .p1 {
+            margin-left: 4%;
+        }
+        .p2 {
+            margin-bottom: 1%;
+            margin-left: 65%;
+        }
+        .msg {
+            position: absolute;
+            top: 10%;
+            opacity: 0;
+            animation: chat 36s linear;
+            color: #24ff24;
+            padding: 25px;
+            border-radius: 10px;
+            text-shadow: 0px 2px 4px black;
+            background: linear-gradient(to right, grey, blue);
+            box-shadow: 2px 4px 8px black;
+            max-width: 30%;
+        }
+        .ps1 {
+            left: 49%;
+            top: 35%;
+            color: #fa5252;
+        }
+        .ps2 {
+            left: 18%;
+        }
+        .m1 {
+            animation-delay: 0s;
+        }
+        .m2 {
+            animation-delay: 5s;
+        }
+        .m3 {
+            animation-delay: 10s;
+        }
+        .m4 {
+            animation-delay: 15s;
+        }
+        .m5 {
+            animation-delay: 20s;
+        }
+        .m6 {
+            animation-delay: 25s;
+        }
+        .m7 {
+            animation-delay: 30s;
+            background: linear-gradient(to right, grey, green);
+            max-width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            font-size: 40px;
+            padding-top: 16%;
+            color: #50f9ff;
+        }
+        .m8 {
+            animation-delay: 31s;
+            background: linear-gradient(60deg, green, #002fff);
+            top: 40%;
+            left: 40%;
+            color: #50f9ff;
+        }
+        .m9 {
+            animation-delay: 32s;
+            top: 60%;
+            left: 40%;
+            color: #50f9ff;
+            background: linear-gradient(60deg, green, #0011ff);
+        }
+        @keyframes chat {
+            0% { opacity: 0; transform: translateY(20px);}
+            5% { opacity: 1; transform: translateY(0);}
+            25% { opacity: 1; transform: translateY(0);}
+            30% { opacity: 0; transform: translateY(-20px);}
+            100% { opacity: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="bearded-man-character-isolated-icon_18591-83385.png" alt="" class="p1">
+        <img src="young-student-ready-class-carrying-backpack-illustration_498874-2201.png" alt="" class="p2">
+        <div class="m1 msg ps1">Oh! Man, I've got this huge assignment due next week. I don't even know where to start.</div>
+        <div class="m2 msg ps2">You know what they say, <span style="font-style: italic; color: #00ffff;">"The best way to get a project done faster is to start sooner."</span></div>
+        <div class="m3 msg ps1">Ugh, I know. I just keep waiting for the perfect time to begin.</div>
+        <div class="m4 msg ps2">There is no perfect time. Starting now is better than waiting for motivation to strike.</div>
+        <div class="m5 msg ps1">You're right. Even if I just outline it today, that's something.</div>
+        <div class="m6 msg ps2">Exactly. A small start is still a start. Momentum will carry you the rest of the way.</div>
+        <strong class=" m7 msg">"The best way to get a project done faster is to start sooner."</strong>
+        <h3 class="msg m8">-Jim Highsmith</h3>
+        <h3 class="msg m9">-VOXXDEV-009</h3>
+    </div>
+</body>
+</html>

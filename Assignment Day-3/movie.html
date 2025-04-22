@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+    <!--nav bar-->
+    <header class="header">
+        <div class="first">
+            <i class="fa-solid fa-bars"></i>
+            <div class="logo">Movie Database</div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </header>
+
+    <!--sidebar-->
+    <aside class="sidebar">
+        <div>
+            <i class="fa-solid fa-house"></i>
+            <p>Home</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-fire-flame-curved"></i>
+            <p>Trending</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-music"></i>
+            <p>Music</p>
+        </div>
+        <div>
+            <i class="fa-brands fa-square-youtube"></i>
+            <p>Subscribtion</p>
+        </div>
+    </aside>
+
+    <!--Video section-->
+    <main class="video-section">
+        <div class="video">
+            <div class="thumbnail">
+                <img src="https://thumbs.dreamstime.com/b/spring-flowers-blue-crocuses-drops-water-backgro-background-tracks-rain-113784722.jpg" alt="">
+                <span class="time">12:46</span>
+            </div>
+            <div class="channel-info">
+                <img src="https://thumbs.dreamstime.com/b/spring-flowers-blue-crocuses-drops-water-backgro-background-tracks-rain-113784722.jpg" alt="">
+                <div>
+                    <h4>Title</h4>
+                    <p>Channel Name • 1.2M views</p>
+                    <p class="subscribers"><i class="fa-solid fa-bullhorn"></i> 360k Subscribers</p>
+                </div>
+            </div>
+            <div class="video-action">
+                <button class="like-btn"><i class="fa-solid fa-thumbs-up"></i> 13k</button>
+                <button class="dislike-btn"><i class="fa-solid fa-thumbs-down"></i> 350</button>
+            </div>
+            <div class="comment-box">
+                <input type="text" placeholder="Add a comment...">
+                <button>Post</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

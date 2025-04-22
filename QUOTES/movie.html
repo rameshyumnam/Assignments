@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviedatabase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            gap: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+            transition: transform 0.3s ease;
+        }
+        .logo:hover {
+            transform: scale(1.1) rotate(-2deg);
+        }
+        .menu {
+            font-size: 24px;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+        }
+        #darkmode {
+            background: none;
+            border: none;
+            font-size: 22px;
+            cursor: pointer;
+            margin-left: auto;
+            color: aliceblue;
+        }
+        #profileicon {
+            font-size: 24px;
+            cursor: pointer;
+            margin-left: auto;
+            background: none;
+            border: none;
+            color: aliceblue;
+        }
+        .search input {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+        .sidebar {
+            width: 200px;
+            position: fixed;
+            top: 60px;
+            bottom: 0;
+            background-color: white;
+            padding: 20px;
+            border-right: 1px solid wheat;
+        }
+        .sidebaricon {
+            padding: 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .sidebaricon:hover {
+            background-color: wheat;
+        }
+
+        .videogrid {
+            margin-left: 220px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .videobox {
+            background-color: antiquewhite;
+            padding: 12px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .videobox:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 12px black;
+        }
+        .thumbnailwrapper {
+            position: relative;
+        }
+        .thumbnailwrapper img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .timespan {
+            position: absolute;
+            bottom: 8px;
+            right: 10px;
+            background-color: gray;
+            color: white;
+            padding: 2px 6px;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+        .channelinfo {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .channellogo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .channelinfo h4 {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        .subscribers {
+            font-size: 13px;
+            color: grey;
+        }
+        .videoaction {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        .videoaction button {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: wheat;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
+        .videoaction button:hover {
+            background-color: aquamarine;
+        }
+        .commentbox {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        .commentbox input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid grey;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .commentbox button {
+            padding: 8px;
+            border: none;
+            background-color: red;
+            color: wheat;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .commentbox button:hover {
+            background-color: #a70000;
+        }
+    </style>
+</head>
+<body>
+    <!--Nav bar-->
+    <header class="header">
+        <div class="menu">
+            III
+        </div>
+        <div class="logo">Movie Database</div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+        </div>
+        <button id="darkmode">O</button>
+        <button id="profileicon">P</button>
+    </header>
+
+    <!--Sidebar-->
+    <aside class="sidebar">
+        <div class="sidebaricon">A Home</div>
+        <div class="sidebaricon">A Trending</div>
+        <div class="sidebaricon">A Music</div>
+        <div class="sidebaricon">A Subscribtion</div>
+    </aside>
+
+    <!--Main video-->
+    <main class="videogrid">
+        <!--Video card 1-->
+        <div class="videobox">
+            <div class="thumbnailwrapper">
+                <img src="young-student-ready-class-carrying-backpack-illustration_498874-2201.png" alt="">
+                <span class="timespan">12:34</span>
+            </div>
+
+            <div class="channelinfo">
+                <img src="bearded-man-character-isolated-icon_18591-83385.png" alt="" class="channellogo">
+                <div>
+                    <h4>Sample Video Title</h4>
+                    <p>Channel Name - 1.2M views</p>
+                    <p class="subscribers">Q 350k Subscribers</p>
+                    <div class="videoaction">
+                        <button class="likebtn">M 12k</button>
+                        <button class="dislikebtn">M 300</button>
+                    </div>
+                    <div class="commentbox">
+                        <input type="text" placeholder="Add a comment...">
+                        <button>Post</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>

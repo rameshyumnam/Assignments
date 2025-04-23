@@ -103,3 +103,93 @@ console.log(typeof money);
 // number to string
 amount = toString(amount);
 console.log(typeof amount);
+
+// Control Flow
+// 1. Conditional statements if {} else {}
+let x = 100;
+let y = 100;
+if (x > y) {
+    console.log(`${x} is greater than ${y}`)
+} else if (x == y) {
+    console.log(`${x} and ${y} are equal`)
+} else {
+    console.log(`${y} is greater than ${x}`)
+}
+
+let time = 4;
+
+if (time < 12) {
+    console.log("Good Morning!");
+} else if (time < 18) {
+    console.log("Good Afternoon!");
+} else {
+    console.log("Goon Evening!");
+};
+
+// Check odd even of a number with conditionals statement
+let number = 123459;
+
+if (number % 2 == 0) {
+    console.log(`${number} is even`);
+} else {
+    console.log(`${number} is odd`);
+};
+
+// Switch case
+let day = "Sunday";
+
+switch (day) {
+    case "Monday":
+        console.log("Today is Monday");
+        break;
+
+    case "Tuesday":
+        console.log("Today is Tuesday");
+        break;
+
+    case "Wednesday":
+        console.log("Today is Wednesday");
+        break;
+
+    case "Thursday":
+        console.log("Today is Thursday")
+        break;
+
+    case "Friday":
+        console.log("Today is Friday");
+        break;
+
+    case "Saturday":
+        console.log("Today is Saturday");
+        break;
+
+    case "Sunday":
+        console.log("Today is Sunday");
+        break;
+    
+    default:
+        console.log("Don't know what day is today.");
+}
+
+// For loop
+let fruits = ["apple", "banana", "mango"];
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+};
+
+for (let i = 0; i <= 10; i++) {
+    console.log("Optivoxx Technologies" , i);
+}
+
+// While loop 
+//let userClicked = false;
+//while (!userClicked) {
+//    console.log("Waiting for User to click....");
+//};
+
+let i = 10;
+
+while (i <= 100) {
+    console.log("Optivix Technologies ", i);
+    i++;
+};
